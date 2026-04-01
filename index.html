@@ -1,0 +1,355 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shayan Public School Kokar</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#072a63;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTIONS */
+
+section{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* HERO */
+
+.hero{
+background:#e8f0ff;
+text-align:center;
+padding:60px 20px;
+border-radius:8px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th{
+background:#0b3d91;
+color:white;
+padding:10px;
+}
+
+td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+/* FORM */
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input, select, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+margin-top:15px;
+padding:12px;
+border:none;
+border-radius:5px;
+background:#28a745;
+color:white;
+cursor:pointer;
+}
+
+/* CARDS */
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Shayan Public School</h1>
+<p>Kokar Dera Ismail Khan | Contact: 03440958233</p>
+
+</header>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#fees">Fees</a>
+<a href="#payment">Pay Fee</a>
+<a href="#admission">Admission</a>
+<a href="#login">Principal</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section id="home" class="hero">
+
+<h2>Admissions Open 2026</h2>
+<p>Quality Education From Nursery To Class 8</p>
+
+</section>
+
+
+<section id="fees">
+
+<h2>School Fee Structure</h2>
+
+<table>
+
+<tr>
+<th>Class</th>
+<th>Fee</th>
+</tr>
+
+<tr>
+<td>Nursery to 3rd</td>
+<td>1000 PKR</td>
+</tr>
+
+<tr>
+<td>4th to 5th</td>
+<td>1200 PKR</td>
+</tr>
+
+<tr>
+<td>6th to 8th</td>
+<td>1500 PKR</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section id="payment">
+
+<h2>Pay Advance Fee</h2>
+
+<p>Send fee via EasyPaisa or JazzCash to:</p>
+
+<h3>03440958233</h3>
+
+<button onclick="window.open('https://wa.me/923440958233?text=I want to pay school fee')">
+Send Payment Message
+</button>
+
+</section>
+
+
+<section id="admission">
+
+<h2>Admission Form</h2>
+
+<form>
+
+<label>Student Name</label>
+<input type="text">
+
+<label>Father Name</label>
+<input type="text">
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Select Class</label>
+
+<select>
+<option>Nursery</option>
+<option>Class 1</option>
+<option>Class 2</option>
+<option>Class 3</option>
+<option>Class 4</option>
+<option>Class 5</option>
+<option>Class 6</option>
+<option>Class 7</option>
+<option>Class 8</option>
+</select>
+
+<label>Phone</label>
+<input type="tel">
+
+<label>Address</label>
+<textarea></textarea>
+
+<button>Submit Admission</button>
+
+</form>
+
+</section>
+
+
+<section id="login">
+
+<h2>Principal Login Panel</h2>
+
+<form>
+
+<label>Username</label>
+<input type="text">
+
+<label>Password</label>
+<input type="password">
+
+<button>Login</button>
+
+</form>
+
+</section>
+
+
+<section id="dashboard">
+
+<h2>Admissions Dashboard</h2>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Total Students</h3>
+<p>120</p>
+</div>
+
+<div class="card">
+<h3>Pending Admissions</h3>
+<p>15</p>
+</div>
+
+<div class="card">
+<h3>Fee Paid</h3>
+<p>80</p>
+</div>
+
+<div class="card">
+<h3>Fee Due</h3>
+<p>40</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Student Fee Records</h2>
+
+<table>
+
+<tr>
+<th>Student Name</th>
+<th>Class</th>
+<th>Fee Status</th>
+</tr>
+
+<tr>
+<td>Ali Khan</td>
+<td>Class 5</td>
+<td>Paid</td>
+</tr>
+
+<tr>
+<td>Ahmad Ali</td>
+<td>Class 3</td>
+<td>Pending</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Phone: 03440958233</p>
+<p>Location: Kokar Dera Ismail Khan</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Shayan Public School Kokar</p>
+
+</footer>
+
+</body>
+</html>
+```
